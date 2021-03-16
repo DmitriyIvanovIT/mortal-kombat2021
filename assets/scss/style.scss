@@ -1,0 +1,66 @@
+@import 'components/normalize';
+@import 'components/variables';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #010202;
+    padding-top: 5.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 114.6rem;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    &-icon {
+        fill: #fff;
+        width: 12.3rem;
+        height: 2.2rem;
+        transition: 1s;
+    }
+
+    &:hover {
+        .logo-icon {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+
+    &-name {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        display: flex;
+        align-items: center;
+        margin-right: 1.5rem;
+    }
+
+    &-avatar {
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
