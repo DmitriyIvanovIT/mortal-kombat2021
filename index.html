@@ -12,17 +12,52 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="/" class="logo">
-            <svg class="icon logo-icon">
-                <use xlink:href="assets/images/icons.svg#logo"></use>
-            </svg>
-        </a>
-        <a href="#" class="user">
-            <span class="user-name">Дмитрий</span>
-            <img src="assets/images/avatar.jpg" alt="avatar" class="user-avatar">
-        </a>
-    </header>
+    <div class="app" id="app">
+        <header class="header">
+            <a href="/" class="logo">
+                <svg class="icon logo-icon">
+                    <use xlink:href="assets/images/icons.svg#logo"></use>
+                </svg>
+            </a>
+            <a href="#" class="user">
+                <span class="user-name">Дмитрий</span>
+                <img src="assets/images/avatar.jpg" alt="avatar" class="user-avatar">
+            </a>
+        </header>
+
+        <main class="film">
+            <img src="assets/images/film-logo.png" alt="film-logo" class="film__logo">
+            <div class="tags">
+                <time class="date">2021</time>
+                <ul class="genre">
+                    <li class="genre__list">боевик</li>
+                    <li class="genre__list">фэнтези</li>
+                    <li class="genre__list">фантастика</li>
+                </ul>
+                <span class="country">США</span>
+                <span class="age">18+</span>
+            </div>
+            <p class="film__description">
+                Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только
+                сильнейший
+            </p>
+            <div class="button-group">
+                <button class="button button__primary">Предзаказ фильма</button>
+                <button class="button button__default">
+                    <svg class="icon play-icon">
+                        <use xlink:href="assets/images/icons.svg#play"></use>
+                    </svg>
+                    <span>Смотреть трейлер</span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.vide.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

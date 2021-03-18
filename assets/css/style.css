@@ -347,7 +347,6 @@ html {
 
 body {
   background: #010202;
-  padding-top: 5.6rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -410,10 +409,238 @@ a {
   margin-right: 1.5rem;
 }
 
+@media (max-width: 576px) {
+  .user-name {
+    display: none;
+  }
+}
+
 .user-avatar {
   width: 4rem;
   height: 4rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+.app {
+  padding-top: 5.6rem;
+  background: -webkit-gradient(linear, left top, right top, from(#010202), color-stop(43%, #010202), color-stop(90.9%, rgba(1, 2, 2, 0.2)));
+  background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 90.9%);
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+  .app {
+    background: -webkit-gradient(linear, left top, right top, color-stop(-2.88%, #010202), color-stop(44.9%, rgba(1, 2, 2, 0.2))), url(../images/cover-image.jpg) no-repeat top right;
+    background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url(../images/cover-image.jpg) no-repeat top right;
+    background-size: 70%;
+    background-position: bottom center;
+  }
+  .app video {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .app {
+    background-size: 80%;
+    padding-top: 4.1rem;
+  }
+}
+
+.film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 114.6rem;
+  width: 90%;
+  margin: auto;
+  font-size: 1.6rem;
+  margin-top: 20rem;
+}
+
+.film__logo {
+  width: 40.5rem;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .film__logo {
+    width: 100%;
+  }
+}
+
+.film__description {
+  margin: 0;
+  max-width: 460px;
+  font-size: 2.1rem;
+  line-height: 140%;
+  margin-bottom: 3.6rem;
+}
+
+@media (max-width: 576px) {
+  .film__description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .film__description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .film {
+    margin-top: 3rem;
+  }
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #E5E5E5;
+  line-height: 140%;
+  margin-bottom: 0.9rem;
+}
+
+@media (max-width: 330px) {
+  .tags {
+    font-size: 1.2rem;
+  }
+}
+
+.date {
+  margin-right: 1.5rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 576px) {
+  .date {
+    margin-right: 1rem;
+  }
+}
+
+.genre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-right: 1.5rem;
+}
+
+.genre__list {
+  opacity: 0.5;
+}
+
+.genre__list:not(:last-child)::after {
+  content: ',';
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .genre {
+    margin-right: 1rem;
+  }
+}
+
+.country {
+  margin-right: 1.5rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 576px) {
+  .country {
+    margin-right: 1rem;
+  }
+}
+
+.age {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  opacity: 0.5;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 0.63em 1.56em 0.75em;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button__primary {
+  background: #EA6E20;
+  margin-right: 1.5rem;
+}
+
+.button__default {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2F2F2F;
+}
+
+.button__default .play-icon {
+  fill: #fff;
+  width: 1.2rem;
+  height: 1.3rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 576px) {
+  .button__default .play-icon {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .button__default span {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .button__default {
+    padding: 0.85em 1.56em;
+  }
+}
+
+.button:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
