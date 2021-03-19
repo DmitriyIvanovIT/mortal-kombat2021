@@ -5,4 +5,5 @@ $(document).ready(function () {
         ogv: 'assets/video/video.ogv',
         poster: 'assets/images/cover-image.jpg'
     });
-})
+});
+
